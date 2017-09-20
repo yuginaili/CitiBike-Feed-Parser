@@ -1,5 +1,5 @@
 # CitiBike-Feed-Parser
-Citi Bike Feed Parser Drupal module
+Citi Bike Feed Parser Drupal Custom Module
 
 Vagrant Drupal Development
 --------------------------
@@ -32,9 +32,8 @@ the source code.
      directory.
 
   4. Adjust configuration (optional)
-     You can edit config.json file to adjust your settings. If you use VDD first
-     time it's recommended to leave config.json as is. Sample config.json is
-     just fine. By default Drupal 8 and Drupal 7 sites are configured.
+     You can edit config.json file to adjust your settings.
+     By default Drupal 8 and Drupal 7 sites are configured.
 
   6. Build your environment
      Please double check your config.json file after editing. VDD can't start
@@ -88,5 +87,13 @@ Vagrant's basic commands (should be executed inside VDD directory):
     can build your machine again with 'vagrant up' command. The command is
     useful if you want to save disk space.
 
-Official Vagrant site has beautiful documentation.
-http://docs.vagrantup.com/v2/
+
+Citi Bike Feed Parser Custom Module
+-----------------------------------
+
+The Citi Bike custom module parse the Citi Bike Feed and displays the bike stations
+in sortable table. The module is in: /sites/all/modules/custom/citi_bike
+
+  * After setting up the Vagrant Drupal Development and getting the Drupal 8 site running
+  * Enable the Citi Bike Module (citi_bike)
+  * Go to the homepage or drupal8.dev/citibike/stations and voilà!
