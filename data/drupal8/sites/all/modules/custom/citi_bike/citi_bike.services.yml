@@ -1,0 +1,7 @@
+services:
+  citi_bike.controller:
+    class: Drupal\citi_bike\CitiBike
+    arguments: ['@http_client', '@logger.channel.citi_bike', '@config.factory']
+  logger.channel.citi_bike:
+    parent: logger.channel_base
+    arguments: ['citi_bike']

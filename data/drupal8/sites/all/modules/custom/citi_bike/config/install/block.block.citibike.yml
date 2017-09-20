@@ -1,0 +1,27 @@
+uuid: bdd94813-94de-4421-b238-e68321b71714
+langcode: en
+status: true
+dependencies:
+  module:
+    - citi_bike
+    - system
+  theme:
+    - bartik
+id: citibike
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: citi_bike
+settings:
+  id: citi_bike
+  label: 'Citi Bike Feed Parser'
+  provider: citi_bike
+  label_display: visible
+  feed_url: 'https://feeds.citibikenyc.com/stations/stations.json'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user/*\r\n/citibike/stations"
+    negate: true
+    context_mapping: {  }

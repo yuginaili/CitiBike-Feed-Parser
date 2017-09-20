@@ -1,0 +1,6 @@
+citi_bike.admin:
+  title: 'Citi Bike Feed Parser'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin_config_development
+  route_name: citi_bike.admin
+  weight: 100

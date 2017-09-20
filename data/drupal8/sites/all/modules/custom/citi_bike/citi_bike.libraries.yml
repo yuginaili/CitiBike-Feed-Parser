@@ -1,0 +1,28 @@
+citi_bike:
+  css:
+    theme:
+      css/citi_bike.css: {}
+
+  js:
+    js/citi_bike.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/drupalSettings
+    - citi_bike/data_tables
+
+data_tables:
+  remote: https://github.com/DataTables/DataTables
+  version: 1.4.4
+  license:
+    name: MIT
+    url: https://github.com/DataTables/DataTables/blob/master/license.txt
+    gpl-compatible: true
+  css:
+    theme:
+      https://cdn.datatables.net/v/dt/dt-1.10.16/r-2.2.0/datatables.min.css: { type: external, minified: true }
+
+  js:
+    https://cdn.datatables.net/v/dt/dt-1.10.16/r-2.2.0/datatables.min.js: { type: external, minified: true }

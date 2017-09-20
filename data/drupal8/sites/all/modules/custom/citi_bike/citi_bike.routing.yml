@@ -1,0 +1,20 @@
+citi_bike.admin:
+  path: '/admin/config/citi_bike'
+  defaults:
+    _form: 'Drupal\citi_bike\Form\CitiBikeForm'
+    _title: 'Citi Bike Feed Parser'
+  requirements:
+    _permission: 'citi_bike configuration'
+citi_bike.stations:
+  path: /citibike/stations
+  defaults:
+    _controller: 'Drupal\citi_bike\Controller\CitiBikeController::showStations'
+    _title: 'Citi Bike Feed Parser'
+  requirements:
+    _permission: 'access content'
+citi_bike.block:
+  path: /citibike/block
+  defaults:
+    _controller: 'Drupal\citi_bike\Controller\CitiBikeController::jsonStations'
+  requirements:
+    _permission: 'access content'

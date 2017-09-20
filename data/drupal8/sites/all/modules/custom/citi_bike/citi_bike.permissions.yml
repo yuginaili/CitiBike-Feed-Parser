@@ -1,0 +1,3 @@
+citi_bike configuration:
+  title: 'Citi Bike Feed parser'
+  description: 'Able to configure Citi Bike'

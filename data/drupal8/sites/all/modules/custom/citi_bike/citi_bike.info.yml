@@ -1,0 +1,16 @@
+name: Citi Bike
+type: module
+description: Adds a block for viewing Citi Bike Feed
+core: 8.x
+package: Custom
+dependencies:
+  - block
+
+configure: citi_bike.settings
+
+php: 5.5
+
+# Information added by Drupal.org packaging script on 2016-09-13
+version: '8.x-1.2'
+core: '8.x'
+project: 'citi_bike'

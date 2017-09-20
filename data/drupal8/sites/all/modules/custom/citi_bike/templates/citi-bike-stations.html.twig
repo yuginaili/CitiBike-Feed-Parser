@@ -1,0 +1,29 @@
+
+<table id="citi-bike-stations-container" class="display" cellspacing="0" width="100%">   
+	<thead>
+	  <tr>
+	  	<th>Station ID</th>
+	    <th>Station Name</th>
+	    <th>Available Docks</th>
+	    <th>Available Bikes</th>
+	    <th>Last Time Checked</th>
+	  </tr>
+	</thead>
+
+	<tbody>
+
+	{% for station in stations %}
+
+    <tr>
+      <td>{{ station.id }}</td>
+      <td>{{ station.stationName }}</td>
+      <td>{{ station.availableDocks }}</td>
+      <td>{{ station.availableBikes }}</td>
+      <td>{{ station.lastCommunicationTime }}</td>
+    </tr>
+
+  {% endfor %}
+
+  </tbody>
+
+</table>

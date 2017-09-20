@@ -1,0 +1,11 @@
+{
+  "name": "drupal/citi_bike",
+  "type": "drupal-module",
+  "description": "Adds a block for viewing Citi Bike",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "",
+  "minimum-stability": "dev",
+  "support": { },
+  "require": { }
+}
