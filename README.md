@@ -14,8 +14,6 @@ customizable and extendable Linux based environment for Drupal development.
 Full VDD documentation can be found on drupal.org:
 https://drupal.org/node/2008758
 
-For support, join us on IRC in the #drupal-vdd channel.
-
 
 Getting Started
 ---------------
@@ -55,8 +53,7 @@ the source code.
      and list of frequently asked questions.
 
 Now you have ready to use virtual development server. By default 2 sites
-are configured: Drupal 7 and Drupal 8. You can add new ones in config.json file
-anytime.
+are configured: Drupal 7 and Drupal 8. You can add new ones in config.json file anytime.
 
 
 Basic Usage
@@ -69,11 +66,18 @@ but you should backup it.
 
 Vagrant's basic commands (should be executed inside VDD directory):
 
-  * $ vagrant ssh
-    SSH into virtual machine.
-
   * $ vagrant up
     Start virtual machine.
+
+  * $ vagrant provision
+    Configure virtual machine after source code change.
+
+  * $ vagrant reload
+    Reload virtual machine. Useful when you need to change network or
+    synced folders settings.
+
+  * $ vagrant ssh
+    SSH into virtual machine.
 
   * $ vagrant halt
     Halt virtual machine.
@@ -83,13 +87,6 @@ Vagrant's basic commands (should be executed inside VDD directory):
     remain unchangeable. VirtualBox machine instance will be destroyed only. You
     can build your machine again with 'vagrant up' command. The command is
     useful if you want to save disk space.
-
-  * $ vagrant provision
-    Configure virtual machine after source code change.
-
-  * $ vagrant reload
-    Reload virtual machine. Useful when you need to change network or
-    synced folders settings.
 
 Official Vagrant site has beautiful documentation.
 http://docs.vagrantup.com/v2/
